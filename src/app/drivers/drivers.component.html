@@ -1,0 +1,23 @@
+<div
+  class="container d-flex justify-content-center align-items-center min-vh-100"
+>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let driver of Drivers">
+      <div class="card mb-4">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Driver ID : {{ driver.DriverID }}</li>
+          <li class="list-group-item">Driver Name : {{ driver.DriverName }}</li>
+          <li class="list-group-item">
+            Driver Phone : {{ driver.PhoneNumber }}
+          </li>
+          <button class="update-button" (click)="updateDriver(driver)">
+            Update
+          </button>
+          <button class="delete-button" (click)="deleteDriver(driver.DriverID)">
+            Delete
+          </button>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

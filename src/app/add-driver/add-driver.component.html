@@ -1,0 +1,9 @@
+<form [formGroup]="driverForm" (ngSubmit)="onSubmit()">
+  <label for="driver-name">Driver Name: </label>
+  <input id="driver-name" type="text" formControlName="driverName" />
+
+  <label for="phoneNumber">Phone Number: </label>
+  <input id="phoneNumber" type="text" formControlName="phoneNumber" />
+
+  <button type="submit">Submit</button>
+</form>
